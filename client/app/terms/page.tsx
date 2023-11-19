@@ -27,37 +27,63 @@ const AboutPage = () => {
 
         <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to you, the person log on this website and compliant to the Company&#39;s terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to our Company. &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client&#39;s needs in respect of provision of the Company&#39;s stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
 
-<br/>
+        <br />
         <h3><strong>Cookies</strong></h3>
 
         <p>We employ the use of cookies. By accessing Tamil Native, you agreed to use cookies in agreement with the AN FinTech&#39;s Privacy Policy. </p>
 
         <p>Most interactive websites use cookies to let us retrieve the user&#39;s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
 
-        <br/>
+        <br />
 
         <h3><strong>Shipping Policy</strong></h3>
 
-      <p>
-        Shipping costs are calculated based on order weight, destination, and shipping method. Delivery times are estimated based on the shipping method chosen. Items may be returned within a specified timeframe for a full refund or exchange.
-      </p>
+        <p>
+          Shipping costs are calculated based on order weight, destination, and shipping method. Delivery times are estimated based on the shipping method chosen. Items may be returned within a specified timeframe for a full refund or exchange.
+        </p>
 
-      <br/>
+        <br />
 
-      <h2><strong>Payment Policy</strong></h2>
+        <h3><strong>Banned Products</strong></h3>
+        <ul>
+          <li>Currency</li>
+          <li>Indian Postal Articles.</li>
+          <li>Liquids &amp; Semi-liquids</li>
+          <li>Philately Items.</li>
+          <li>Pornography</li>
+          <li>Bullion</li>
+          <li>Drugs and Narcotics (Illegal).</li>
+          <li>Firearms, parts thereof and ammunition.</li>
+          <li>Precious &amp; Semi-Precious Items.</li>
+          <li>Radioactive Material.</li>
+          <li>Commodities banned by Law at any given time without prior notice.</li>
+          <li>All IATA Restricted Items and Dangerous goods.</li>
+          <li>Firearms, parts thereof and ammunition.</li>
+          <li>All Dangerous Goods as defined by IATA.</li>
+          <li>C.O.D. (Cash on delivery) shipments.</li>
+          <li>Corpses, cremated or disinterred remains.</li>
+          <li>Foodstuffs/Perishable (Food and beverages requiring refrigeration or other environmental control).</li>
+          <li>Gambling Devices: Lottery tickets and gambling devices where prohibited by national, provincial, state or local law.</li>
+          <li>Live animals and plants (Note: Cut flowers are acceptable to Canada).</li>
+          <li>Money (Coins, Cash currency, Paper money and Negotiable Instruments).</li>
+          <li>Pornography</li>
+          <li>Dry Ice (including that used for packaging).</li>
+        </ul>
+        <br />
 
-      <p>
-        We accept various payment methods, including credit cards, debit cards, and digital wallets. Payment transactions are secured using industry-standard encryption protocols.
-      </p>
-      <br/>
+        <h2><strong>Payment Policy</strong></h2>
+        <p>
+          We accept various payment methods, including credit cards, debit cards, and digital wallets. Payment transactions are secured using industry-standard encryption protocols.
+        </p>
+        <br />
 
-      <h2><strong>Refund Policy</strong></h2>
+        <h2><strong>Refund Policy</strong></h2>
 
-      <p>
-        Refunds are issued for items returned in their original condition within the specified timeframe. Refunds may be deducted for shipping costs or restocking fees.
-      </p>
+        <p>
+          Refunds are issued for items returned in their original condition within the specified timeframe. Refunds may be deducted for shipping costs or restocking fees.
+        </p>
 
-        <br/>
+        <br />
         <h3><strong>License</strong></h3>
 
         <p>Unless otherwise stated, AN FinTech and/or its licensors own the intellectual property rights for all material on Tamil Native. All intellectual property rights are reserved. You may access this from Tamil Native for your own personal use subjected to restrictions set in these terms and conditions.</p>
@@ -85,7 +111,7 @@ const AboutPage = () => {
 
         <p>You hereby grant AN FinTech a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
 
-        <br/>
+        <br />
         <h3><strong>Hyperlinking to our Content</strong></h3>
 
         <p>The following organizations may link to our Website without prior written approval:</p>
@@ -128,29 +154,29 @@ const AboutPage = () => {
 
         <p>No use of AN FinTech&#39;s logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
 
-        <br/>
+        <br />
         <h3><strong>iFrames</strong></h3>
 
         <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
 
-        <br/>
+        <br />
         <h3><strong>Content Liability</strong></h3>
 
         <p>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
 
-        <br/>
+        <br />
         <h3><strong>Reservation of Rights</strong></h3>
 
         <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it&#39;s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
 
-        <br/>
+        <br />
         <h3><strong>Removal of links from our website</strong></h3>
 
         <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
 
         <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
 
-        <br/>
+        <br />
         <h3><strong>Disclaimer</strong></h3>
 
         <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
