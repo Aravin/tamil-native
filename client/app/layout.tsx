@@ -1,37 +1,37 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import { Navbar } from './_components/Navbar'
-import { Footer } from './_components/Footer'
+"use client";
 
-const inter = Inter({ subsets: ['latin'] })
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop";
+import { Inter } from "next/font/google";
+import "node_modules/react-modal-video/css/modal-video.css";
+import "../styles/index.css";
 
-export const metadata: Metadata = {
-  title: 'Tamil Native',
-  description: 'A service to send native products to anyone around the globe, based on their request & customization',
-}
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="light">
-      <body className={inter.className}>
-        <header>
-          <Navbar />
-          <div className='py-2'>
-            <hr />
-          </div>
-        </header>
+    <html suppressHydrationWarning lang="en">
+      {/*
+        <head /> will contain the components returned by the nearest parent
+        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+      */}
+      <head />
 
-        <div className='p-4 m-4 md:p-8 md:m-8 lg:p-10 lg:m-10'>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+        <Providers>
+          <Header />
           {children}
-        </div>
-
-        <Footer />
+          <Footer />
+          <ScrollToTop />
+        </Providers>
       </body>
     </html>
-  )
+  );
 }
+
+import { Providers } from "./providers";
