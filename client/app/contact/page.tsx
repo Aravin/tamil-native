@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Have a question, suggestion, or feedback? We're always happy to hear from you. Reach out to us using the contact form below or by using one of the methods provided. We'll get back to you as soon as possible."
       />
 
       <Contact />
