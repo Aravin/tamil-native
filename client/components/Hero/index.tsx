@@ -1,4 +1,13 @@
+'use client'
+
 import Link from "next/link";
+import Typewriter, { Options } from 'typewriter-effect';
+
+const typewriterOptions: Partial<Options> = {
+  strings: ['foods', 'snacks', 'sweets', 'fruits', 'vegetables', 'cloths', 'medicines', 'documents', 'books', 'furniture', 'electronic appliance', 'anything'],
+  autoStart: true,
+  loop: true,
+}
 
 const Hero = () => {
   return (
@@ -15,10 +24,10 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Get the shipment delivered anywhere in the world
+                  Get the <span><Typewriter options={typewriterOptions}/></span> delivered anywhere in the world.
                 </h1>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                Missing the familiar flavors and products from your hometown? With our reliable delivery service, you can now enjoy the comforts of home wherever you are. We will bridge the distance and bring your favorite hometown treasures right to your doorstep. Say goodbye to the hassle of searching for nostalgic items and embrace the convenience of shopping from your hometown, even when you are far away.
+                  Missing the familiar flavors and products from your hometown? With our reliable delivery service, you can now enjoy the comforts of home wherever you are. We will bridge the distance and bring your favorite hometown treasures right to your doorstep. Say goodbye to the hassle of searching for nostalgic items and embrace the convenience of shopping from your hometown, even when you are far away.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
