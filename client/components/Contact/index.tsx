@@ -1,6 +1,24 @@
+'use client';
+
+import { useState } from "react";
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
+
+  const [isMailSent, setMailStatus] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    fetch('api/send', { method: 'POST', body: JSON.stringify(formData) }).then((_) => setMailStatus(true));
+  };
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -17,7 +35,10 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form>
+              {isMailSent && <section>
+                Request received successfully.
+              </section>}
+              {!isMailSent && <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -29,7 +50,10 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        value={formData.name}
+                        onChange={(event) => setFormData({ ...formData, name: event.target.value })}
                         placeholder="Enter your name"
+                        required={true}
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -44,6 +68,8 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        value={formData.email}
+                        onChange={(event) => setFormData({ ...formData, email: event.target.value })}
                         placeholder="Enter your email"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -59,6 +85,8 @@ const Contact = () => {
                       </label>
                       <textarea
                         name="message"
+                        value={formData.message}
+                        onChange={(event) => setFormData({ ...formData, message: event.target.value })}
                         rows={5}
                         placeholder="Enter your Message"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -71,7 +99,7 @@ const Contact = () => {
                     </button>
                   </div>
                 </div>
-              </form>
+              </form>}
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
