@@ -73,23 +73,28 @@ const Locations = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Delivery Locations"
-                paragraph="We delivery 150 countries"
+                paragraph="We delivery over 150+ countries"
                 center
               />
 
               <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
+                className="wow fadeInUp mb-12 lg:mb-0"
                 data-wow-delay=".15s"
               >
                 <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                  <div className="w-full px-3 sm:w-1/3 lg:w-full xl:w-1/3">
                     {
                       locationByPopulation.sort((a, b) => b.population - a.population).slice(0, 14).map((_) => <IconList text={_.country} key={_.population} />)
                     }
                   </div>
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                  <div className="w-full px-3 sm:w-1/3 lg:w-full xl:w-1/3">
                     {
                       locationByPopulation.sort((a, b) => b.population - a.population).slice(16, 30).map((_) => <IconList text={_.country} key={_.population} />)
+                    }
+                  </div>
+                  <div className="hidden md:block w-full px-3 sm:w-1/3 lg:w-full xl:w-1/3">
+                    {
+                      locationByPopulation.sort((a, b) => b.population - a.population).slice(31, 45).map((_) => <IconList text={_.country} key={_.population} />)
                     }
                     <IconList text="and more..." />
                   </div>
