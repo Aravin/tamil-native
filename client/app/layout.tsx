@@ -9,6 +9,7 @@ import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] });
 const GTAG_ID = process.env.NEXT_PUBLIC_GTAG;
+const ZOHO_CHAT = process.env.ZOHO_CHAT;
 
 export default function RootLayout({
   children,
@@ -37,7 +38,7 @@ export default function RootLayout({
         <Script id="zsiqchat">
           {
             `
-            var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq379cb93a9974a8bb78fe865c9364ea1dda81b8aca5f5840b446a9a3bed4407a0", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+            var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "${ZOHO_CHAT}", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
             `
           }
         </Script>
