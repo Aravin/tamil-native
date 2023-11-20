@@ -23,10 +23,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: domain + '/service-locations',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
         url: domain + '/terms',
         lastModified: new Date(),
         changeFrequency: 'weekly',
-        priority: 0.5,
+        priority: 0.4,
       },
   ]
 }
