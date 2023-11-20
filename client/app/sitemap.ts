@@ -11,6 +11,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: domain + '/transport-types',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: domain + '/service-locations',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
       url: domain + '/about',
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -18,12 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: domain + '/contact',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
-    },
-    {
-      url: domain + '/service-locations',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
