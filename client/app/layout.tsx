@@ -34,9 +34,7 @@ export default function RootLayout({
           gtag('config', '${GTAG_ID}');
         `}
         </Script>
-        <Script
-          src='//in.fw-cdn.com/31544809/764136.js'
-          async defer />
+       
 
       </head>
 
