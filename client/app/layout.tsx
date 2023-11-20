@@ -9,7 +9,7 @@ import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] });
 const GTAG_ID = process.env.NEXT_PUBLIC_GTAG;
-const ZOHO_CHAT = process.env.ZOHO_CHAT;
+const ZOHO_CHAT = process.env.NEXT_PUBLIC_ZOHO_CHAT;
 
 export default function RootLayout({
   children,
