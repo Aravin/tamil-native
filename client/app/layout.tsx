@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
+import { Providers } from "./providers";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../styles/index.css";
 import Script from 'next/script'
 
@@ -44,6 +46,4 @@ export default function RootLayout({
     </html>
   );
 }
-
-import { Providers } from "./providers";import GoogleAnalytics from "@/components/GoogleAnalytics";
 
