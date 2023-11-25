@@ -24,7 +24,6 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head>
-        <meta name="msvalidate.01" content="3AC15FC6D264B1BEB6A5052F99584334" />
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
         <Script id="zsiqchat">
           {
