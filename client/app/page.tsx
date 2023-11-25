@@ -22,10 +22,10 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Locations/>
+      <TransportTypes/>
       <Features />
       <Brands />
       <AboutSectionOne />
-      <TransportTypes/>
       {/* <Testimonials /> */}
       {/* <Blog /> */}
       <Contact />

@@ -1,7 +1,23 @@
-import { MetadataRoute } from 'next'
+import { locationByPopulation } from '@/components/Locations/locationData';
+import { MetadataRoute } from 'next';
 
-const domain = 'https://www.tamilnative.com'
- 
+const domain = 'https://www.tamilnative.com';
+
+// importing from component
+// TODO: optimize it, bad practice
+
+const generateSitemapForAllLocation = (path: string) => {
+  return locationByPopulation.map((_) => {
+      return {
+        url: `${domain}/article/${path}-${_.country}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as any,
+        priority: 0.4,
+      };
+  });
+}
+
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -35,10 +51,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-        url: domain + '/terms',
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.4,
-      },
+      url: domain + '/terms',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.4,
+    },
+    ...generateSitemapForAllLocation('most-shipped-items-from-tamilnadu-to-'),
   ]
 }
