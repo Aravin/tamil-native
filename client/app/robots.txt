@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /error/
+
+Sitemap: https://www.tamilnative.com/sitemap.xml
